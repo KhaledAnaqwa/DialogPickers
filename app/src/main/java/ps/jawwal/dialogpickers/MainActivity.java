@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setTitle("Alert");
                 builder.setMessage("Hi everyone!! ");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
